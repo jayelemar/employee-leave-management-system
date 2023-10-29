@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+    @apply font-poppins;
+}
+
+.custom-button {
+    @apply bg-blue-500 text-white p-4;
+}
