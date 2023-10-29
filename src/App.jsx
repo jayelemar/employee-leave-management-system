@@ -1,11 +1,19 @@
 import './App.css'
+import { Footer, Header, Main, Sidebar } from './layout'
+
 
 function App() {
 
 
   return (
     <>
-      <h1 className='text-red-500'>RED</h1>
+      <Header/>
+      <Main/>
+      <section className='flex'>
+        <div>Calendar</div>
+        <Sidebar/>
+      </section>
+      <Footer/>
     </>
   )
 }
