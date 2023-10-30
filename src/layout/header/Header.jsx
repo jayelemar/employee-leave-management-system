@@ -1,21 +1,28 @@
-import styles from './Header.module.scss'
+import styles from './Header.module.css'
+import { BsCalendar3 } from 'react-icons/bs'
 
 const Header = () => {
   return (
     <header>
-        <div className={`container flex ${styles.container}`}>
-            <div className={`flex ${styles.logo}`}>
-                <div className="rounded-full bg-blue-600 h-12 w-12">
-                    <p className="text-3xl justify-center items-center">AB</p>
+        <div className={`container ${styles.container}`}>
+            <div className={styles.banner}>
+                <div className={styles.logo}>
+                    <p className={styles.logoText}>AB</p>
                 </div>
-                <div className=" flex-col justify-start w-4/5 ">
-                    <p className="justify-start">Hi, Blossom! Planning to go on leave?</p>
-                    <sub className="justify-start my-2">
+
+                <div className={styles['banner-msg']}>
+                    <p className={styles.p}>Hi, Blossom! Planning to go on leave?</p>
+                    <sub>
                         Dont forget to refer to the Leave Bucket and your leave dashboard before plotting
                     </sub>
                 </div>
             </div>
-            <h5 className="text-red-500 flex justify-end mx-12">My Leave Management Systems</h5>
+
+            <div className={styles.h5}>
+                <h5><BsCalendar3 size={22} className={styles['calendar-logo']}/>My Leave</h5>
+                <h5>Management Systems</h5>
+            </div>
+
         </div>
     </header>
   )

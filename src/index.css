@@ -21,8 +21,8 @@ aside {
 
 .container,
 nav {
-    max-width: 1200px;
-    @apply m-auto;
+    max-width: 1300px;
+    @apply m-auto bg-slate-50;
 }
 
 h1,

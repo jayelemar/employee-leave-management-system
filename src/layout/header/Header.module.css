@@ -1,0 +1,36 @@
+header {
+    .container {
+        @apply flex justify-between items-center min-h-[80px];
+
+        .banner {
+            @apply flex items-center;
+
+            .logo {
+                @apply w-14 h-14 ml-4 m-1 rounded-full bg-slate-300
+                flex justify-center items-center;
+
+                .logoText {
+                    @apply text-center mt-3 w-8 h-8;
+                }
+            }
+
+            .banner-msg {
+                @apply my-2 mx-1 px-4 pt-2 h-14 w-max
+                hidden md:block
+                border border-solid border-sky-100 rounded
+                bg-sky-300 text-white text-base;
+
+                .p {
+                    @apply leading-4;
+                }
+            }
+        }
+
+        .h5 {
+            @apply my-2 mx-4 flex justify-end flex-col w-full text-end;
+            .calendar-logo {
+                @apply w-6 inline-block mx-2;
+            }
+        }
+    }
+}
