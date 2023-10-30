@@ -1,0 +1,12 @@
+header {
+    @apply flex mt-4;
+
+    .container {
+        @apply border border-solid border-red-500 bg-yellow-300 justify-center items-center p-4;
+
+        .logo {
+            
+        }
+    }
+
+}
