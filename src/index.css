@@ -12,14 +12,11 @@ html {
     @apply text-base;
 }
 
-body {
-    @apply w-full bg-slate-100;
-}
-
 header,
 footer,
-section {
-    @apply justify-center min-w-[1200px] bg-red-400;
+section,
+aside {
+    @apply justify-center w-full bg-slate-200;
 }
 
 .container,
