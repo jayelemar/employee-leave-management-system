@@ -1,0 +1,111 @@
+.panel {
+    @apply min-h-[250px]
+    bg-slate-50
+    flex justify-center items-start p-3 pt-0;
+
+    .dashboard {
+        @apply min-h-[200px]
+        bg-slate-200 rounded-lg
+        flex flex-col justify-center items-center;
+
+        .my-leave-dashboard {
+            @apply min-h-[100px]
+            bg-slate-200 p-2 rounded-lg;
+
+            h5 {
+                @apply text-lg px-2;
+            }
+
+            .leave-categories {
+                @apply grid gap-2 
+                grid-cols-3 sm:grid-cols-4 lg:grid-cols-8
+                min-h-[100px] p-2;
+
+                .leave-category {
+                    @apply 
+                    min-h-[7rem] md:min-h-[5rem]
+                    w-full sm:w-full
+                    flex flex-col items-center rounded-md
+                    justify-start
+                    text-center text-slate-50
+                    bg-red-600
+                    m-0 py-1 pt-7 sm:pt-5 lg:pt-4 px-1;
+
+                    h5 {
+                        @apply leading-none
+                        text-2xl text-slate-50;
+                    }
+                    p {
+                        @apply 
+                        text-[12px] sm:text-base lg:text-[12px]
+                        ;
+                    }
+                }
+
+                .leave-remaining {
+                    @apply bg-black;
+                }
+
+                .leave-entitlement {
+                    @apply bg-gray-700;
+                }
+
+            }
+        }
+        .bucket {
+            @apply block lg:flex;
+
+            .leave-bucket {
+                @apply min-h-[100px]
+                bg-slate-200 px-2 py-0 rounded-lg
+                block 
+                ;
+    
+                h5 {
+                    @apply text-lg px-2 ;
+                }
+    
+                .bucket-categories {
+                    @apply grid gap-2 
+                    grid-cols-3
+                    min-h-[100px] p-2;
+    
+                    .leave-category {
+                        @apply
+                        h-[7rem] sm:h-[5rem]
+                        w-full sm:w-full
+                        flex flex-col items-center rounded-md 
+                        justify-start sm:justify-center 
+                        pt-9 sm:pt-0
+                        text-center text-slate-50
+                        bg-red-600
+                        m-0 p-1
+                        ;
+    
+                        h5 {
+                            @apply leading-none
+                            text-lg sm:text-2xl text-slate-50;
+                        }
+                        p {
+                            @apply 
+                            text-[12px] sm:text-base lg:text-[12px]
+                            ;
+                        }
+                    }
+    
+                    .bucket-dept {
+                        @apply bg-black;
+                    }
+                    
+                    .bucket-team {
+                        @apply bg-gray-700;
+                    }
+    
+    
+    
+                }
+            }
+        }
+        
+    }
+}
